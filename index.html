@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N3TWORK - Test</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container bg-secondary">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">N3TWORK - Test</a>
+    </nav>
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <div class="card-header bg-dark">
+                    Spiral
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="spiral-input-m">Matrix</label>
+                        <input type="text" class="form-control" id="spiral-input-m">
+                        <small id="emailHelp" class="form-text text-muted">example: "[1,2,3,4,5,6,7,8,9]"</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="spiral-input-n">N</label>
+                        <input min="1" type="number" class="form-control" id="spiral-input-n">
+                        <small class="form-text text-muted">example: "3"</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" onclick="calculateSpiral()">Calculate</button>
+
+                </div>
+                <div class="card-footer">
+                    <h5>Result</h5>
+                    <p id="spiral-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <div class="card-header">
+                    Primes
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="prime-input">N</label>
+                        <input type="number" min="2" class="form-control" id="prime-input">
+                        <small class="form-text text-muted">example: "30"</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" onclick="calculatePrime()">Calculate</button>
+                </div>
+                <div class="card-footer">
+                    <h5>Result</h5>
+                    <p id="prime-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card bg-dark text-white">
+                <div class="card-header">
+                    Circles
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="circles-input">N</label>
+                        <input type="text" class="form-control" id="circles-input">
+                        <small class="form-text text-muted">example:
+                            "[{"x":400,"y":15,"r":400},{"x":13,"y":140,"r":300}]"</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" onclick="calculateCollisions()">Calculate</button>
+                </div>
+                <div class="card-footer">
+                    <h5>Result</h5>
+                    <div id="circles-result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
